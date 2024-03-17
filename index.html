@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Deliverance Church Ruiru</title>
+ 
+/* Keyframes for fade-in-up animation */
+@keyframes fade-in-up {
+  from {
+      opacity: 0;
+      transform: translateY(20px); /* Move element down */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0); /* Move element back to its original position */
+  }
+} 
+
+
+@keyframes fade-in-left {
+  from {
+      opacity: 0;
+      transform: translateX(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+
+</head>
+<body>
+  <header id="header">
+    
+      
+    <div class="logo">
+        <img src="images/logo.png" alt="Church Logo"><span class="church-name
+        ">DELIVERANCE CHURCH</span>
+        <span class="church-name2">INT`L RUIRU</span>
+    </div>
+    <div class="contact-info">
+        <div class="email">
+            <img src="icons/icons8-email-100.png" alt="Email Icon">
+            <a href="mailto:info@example.com">info@example.com</a>
+        </div>
+        <div class="phone">
+            <img src="icons/icons8-call-100.png" alt="Phone Icon">
+            <span>+1 (555) 123-4567</span>
+        </div>
+    </div>
+    <nav class="main-nav">
+        <ul class="navlinks">
+            <li><a href="index.html">HOME</a></li>
+            <li class="dropdown"><a href="#">ABOUT US <img  src="icons/icons8-expand-arrow-100.png" alt="dropdown menu"></a>
+                <ul class="dropdown-menu">
+                    <li><a href="about.html" >About Us</a></li>
+                    <li><a href="program.html">Our Programs</a></li>
+                    <li><a href="pastors.html">Our Pastors</a></li>
+                    <li><a href="mission.html">Our Mission/Vision</a></li>
+                    <li><a href="history.html">Our History</a></li>
+                    
+                </ul>
+            </li>
+            <li class="dropdown"><a href="ministries">MINISTRIES <img  src="icons/icons8-expand-arrow-100.png" alt="dropdown menu"></a>
+                <ul class="dropdown-menu">
+                    <li><a href="children.html" target="_blank">Children</a></li>
+                    <li><a href="children.html" target="_blank">Youth</a></li>
+                    <li><a href="children.html">Women</a></li>
+                    <li><a href="children.html">Men</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#">GALLERY <img  src="icons/icons8-expand-arrow-100.png" alt="dropdown menu"></a>
+              <ul class="dropdown-menu">
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="videos.html">Videos</a></li>
+            </ul>
+            </li>
+
+            <li class="dropdown"><a href="#">SHOP <img  src="icons/icons8-expand-arrow-100.png" alt="dropdown menu"></a>
+              <ul class="dropdown-menu">
+                <li><a href="children-books.html">Children Books</a></li>
+                <li><a href="teachers-books.html">Teacher`s Books</a></li>
+                <li><a href="bibles.html">Bibles</a></li>
+                <li><a href="song-books.html">Song Books</a></li>
+                <li><a href="writer`s-space.html">Writer`s Space</a></li>
+            </ul>
+            </li>
+            <li class="dropdown"><a href="#">GIVING <img  src="icons/icons8-expand-arrow-100.png" alt="dropdown menu"></a>
+              <ul class="dropdown-menu">
+                <li><a href="offerings.html" target="_blank">Offerings</a></li>
+                <li><a href="tithe.html">Tithe</a></li>
+            </ul>
+            </li>
+            <li><a href="contact-us.html">CONTACT US</a></li>
+            <li><a href="live.html">LIVE</a></li>
+            <li><div class="live-icon"><img src="icons/icons8-youtube-live-100.png" alt="live icon"></div></li>
+            <li><div class="search">
+        <input type="text" placeholder="Search...">
+        </div> </li>
+        </ul>
+      
+    </nav>
+    
+</header>
+
+<section id="index">
+  <div class="landing-content">
+      <h1>WELCOME TO DELIVERANCE CHURCH INT`L RUIRU</h1>
+      <button onclick="window.location.href='blog.html'">LEARN MORE</button>
+  </div>
+  <div class="image-buttons">
+      <button onclick="changeBackground(0)" class="active"></button>
+      <button onclick="changeBackground(1)"></button>
+      <button onclick="changeBackground(2)"></button>
+  </div>
+  <img src="images/landing photo.jpg" class="background-image" alt="Background Image 1">
+  <img src="images/landing photo.jpg" class="background-image" alt="Background Image 2">
+  <img src="images/photo3.jpg" class="background-image" alt="Background Image 3">
+</section>
+
+<section id="upcoming-events">
+  <h2 class="section-title">Upcoming Events</h2>
+  
+  <div class="event fade-in-up">
+      <img src="images/event1.jpeg" alt="Event 1">
+      <p>Description of Event 1</p>
+      <button>More Details</button>
+  </div>
+  <div class="event fade-in-up">
+      <img src="images/event3.jpeg" alt="Event 2">
+      <p>Description of Event 2</p>
+      <button>More Details</button>
+  </div>
+  <div class="event fade-in-up">
+    <img src="images/event1.jpeg" alt="Event 1">
+    <p>Description of Event 3</p>
+    <button>More Details</button>
+</div>
+<div class="event fade-in-up">
+    <img src="images/event3.jpeg" alt="Event 2">
+    <p>Description of Event 4</p>
+    <button>More Details</button>
+</div>
+<div class="event fade-in-up">
+  <img src="images/event1.jpeg" alt="Event 1">
+  <p>Description of Event 5</p>
+  <button>More Details</button>
+</div>
+<div class="event fade-in-up">
+  <img src="images/event3.jpeg" alt="Event 2">
+  <p>Description of Event 6</p>
+  <button>More Details</button>
+</div>
+  <!-- Add more event divs as needed -->
+</section>
+
+<section id="latest-articles">
+  <h2 class="article-title">Latest Articles</h2>
+  <div class="articles-container">
+      <div class="article fade-in-left">
+          <img src="images/a monitor.webp" alt="Article 1">
+          <div class="article-info">
+              <h3>Announcement</h3>
+              <p>Buying of a new Monitor.</p>
+              <div class="author">
+                  <img src="icons/icons8-person-100.png" alt="Author 1">
+                  <span>John Doe</span>
+              </div>
+              <div class="date">
+                <img src="icons/icons8-sign-up-in-calendar-100.png" alt="Author 1">
+                  <span>February 20, 2024</span>
+              </div>
+              <button>Read More</button>
+          </div>
+      </div>
+      <div class="article fade-in-left">
+        <img src="images/a monitor.webp" alt="Article 1">
+        <div class="article-info">
+            <h3>Announcement</h3>
+            <p>Description of the announcement article goes here.</p>
+            <div class="author">
+                <img src="icons/icons8-person-100.png" alt="Author 1">
+                <span>John Doe</span>
+            </div>
+            <div class="date">
+              <img src="icons/icons8-sign-up-in-calendar-100.png" alt="Author 1">
+                <span>February 20, 2024</span>
+            </div>
+            <button>Read More</button>
+        </div>
+    </div>
+    <div class="article fade-in-left">
+      <img src="images/bible2.webp" alt="Article 1">
+      <div class="article-info">
+          <h3>Sermon</h3>
+          <p>Description of the announcement article goes here.</p>
+          <div class="author">
+              <img src="icons/icons8-youtube-100 (2).png" alt="Author 1">
+              <span>Youtube</span>
+          </div>
+          <div class="date">
+            <img src="icons/icons8-sign-up-in-calendar-100.png" alt="Author 1"> 
+              <span>February 20, 2024</span>
+          </div>
+          <button>Read More</button>
+      </div>
+  </div>
+  <div class="article fade-in-left">
+    <img src="images/bible2.webp" alt="Article 1">
+    <div class="article-info">
+        <h3>Sermon</h3>
+        <p>Description of the announcement article goes here.</p>
+        <div class="author">
+            <img src="icons/icons8-youtube-100 (2).png" alt="Author 1">
+            <span>Youtube</span>
+        </div>
+        <div class="date">
+          <img src="icons/icons8-sign-up-in-calendar-100.png" alt="Author 1">
+            <span>February 20, 2024</span>
+        </div>
+        <button>Read More</button>
+    </div>
+</div>
+      <!-- Add more articles as needed -->
+  </div>
+</section>
+
+<footer>
+  <div class="footer-left">
+      <h3>Contact Us</h3>
+      <p>Email: example@example.com</p>
+      <p>Phone: 123-456-7890</p>
+      <a><img src="icons/icons8-facebook-100.png" alt="facebook"></a>
+      <a><img src="icons/icons8-tiktok-100.png" alt="tiktok"></a>
+      <a><img src="icons/icons8-instagram-100.png" alt="instagram"></a>
+      <a><img src="icons/icons8-twitterx-100.png" alt="twitter"></a>
+      <a><img src="icons/icons8-youtube-100.png" alt="Youtube"></a>
+      
+      <!-- Add social icons here -->
+  </div>
+  <div class="footer-middle">
+      <h3>Location</h3>
+      <p>123 Main Street</p>
+      <p>City, State ZIP</p>
+      <!-- Add map or additional location details here -->
+  </div>
+  <div class="footer-right">
+      <h3>Subscribe to our Newsletters</h3>
+      <form action="#" method="post">
+          <input type="email" name="email" placeholder="Your email address" required>
+          <!-- Add human verification checkbox here -->
+          <div class="human-verification">
+              <input type="checkbox" name="verification" id="verification" required>
+              <label for="verification">I am not a robot</label>
+          </div>
+          <button type="submit">Subscribe</button>
+      </form>
+  </div>
+  <hr>
+  <div class="footer-bottom">
+      <p>&copy; 2024 Deliverance Church Ruiru</p>
+      <p>Developed by <a href="#">Mbogo Kim</a></p>
+  </div>
+</footer>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
